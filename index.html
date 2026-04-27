@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SensoryMap Barcelona | Mapa de carga sensorial</title>
+    <meta
+      name="description"
+      content="Mapa de carga sensorial para decidir rapido que lugares evitar y que lugares pueden funcionar como refugio en Barcelona."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+    <header class="site-header" id="inicio">
+      <div class="container header-inner">
+        <p class="brand">SensoryMap BCN</p>
+        <nav aria-label="Principal">
+          <ul class="nav-list">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#mapa">Mapa</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenido" tabindex="-1">
+      <section class="hero container reveal">
+        <p class="eyebrow">Mapa de carga sensorial en Barcelona</p>
+        <h1>Cuando todo satura, esta web te ayuda a decidir en segundos.</h1>
+        <p class="hero-copy">
+          Aqui puedes ver lugares con <strong>alta carga sensorial</strong> y lugares que suelen
+          sentirse mas <strong>refugio</strong>. Es una guia rapida para reducir ruido mental en
+          momentos de sobreestimulacion.
+        </p>
+        <a class="cta" href="#mapa">Ver mapa</a>
+      </section>
+
+      <section class="map-section container reveal" id="mapa" aria-labelledby="titulo-mapa">
+        <div class="section-head">
+          <h2 id="titulo-mapa">Mapa</h2>
+          <p>Carga sensorial y puntos refugio.</p>
+        </div>
+
+        <aside class="legend" aria-label="Leyenda del mapa">
+          <h3>Leyenda</h3>
+          <ul>
+            <li>
+              <span class="dot dot-red" aria-hidden="true"></span>
+              <span><strong>Rojo</strong>: alta carga sensorial</span>
+            </li>
+            <li>
+              <span class="dot dot-green" aria-hidden="true"></span>
+              <span><strong>Verde</strong>: lugar refugio</span>
+            </li>
+          </ul>
+          <p class="safety-note">
+            Este mapa orienta, pero tu percepcion en tiempo real es prioritaria.
+          </p>
+        </aside>
+
+        <div class="map-frame-wrap" aria-live="polite">
+          <iframe
+            title="Mapa de carga sensorial de Barcelona"
+            src="https://www.google.com/maps/d/embed?mid=1dFTuGB09hWI4GnHqjYAd_amAD3c3tlw&ehbc=2E312F&noprof=1"
+          ></iframe>
+        </div>
+      </section>
+
+      <section class="contact container reveal" id="contacto" aria-labelledby="titulo-contacto">
+        <div class="section-head">
+          <h2 id="titulo-contacto">Contacto</h2>
+          <p>Tu feedback ayuda a mejorar el mapa.</p>
+        </div>
+
+        <p>
+          Si quieres sugerir un punto, corregir informacion o compartir contexto, puedes escribir
+          directamente a:
+        </p>
+
+        <p class="contact-mail">
+          <a href="mailto:contacto@sensorymapbcn.org?subject=Sugerencia%20SensoryMap%20BCN"
+            >contacto@sensorymapbcn.org</a
+          >
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>Proyecto comunitario en fase MVP. Barcelona.</p>
+      </div>
+    </footer>
+  </body>
+</html>
